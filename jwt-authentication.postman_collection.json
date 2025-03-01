@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "c6d9bf8a-ec63-4110-a190-95906a369d3b",
+		"name": "jwt-authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37733714"
+	},
+	"item": [
+		{
+			"name": "auth-request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data-access-request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWliaGF2IiwiaWF0IjoxNzQwNDI0MzMzLCJleHAiOjE3NDA0NDIzMzN9.DgftGeBHJEfdbCN591eWtJsR6eyEcA1Km4tkKbgpV5D0jNEDhDp8tVeCTVsMkal8ZGYgoh1lnm1lDU5ph52t4g",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:9090/api/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
